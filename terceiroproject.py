@@ -21,7 +21,7 @@ while True:
          print("---------------------------")
          continuar = input("Quer continuar? {sim/não}: ").strip().lower() == "sim"
          if not continuar:
-             print("Encerrando..")
+             print("Encerrando...")
              break
          else:
              c = c + 1
