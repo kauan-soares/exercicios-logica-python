@@ -38,6 +38,9 @@ while True:
         
         continuar = input("Quer continuar? {sim/não}: ").strip().lower() == "sim"
         if not continuar:
+            print("-------------------------------")
+            print(f"Quantidade de vendas: {c}")
+            print("-------------------------------")
             print("Encerrando...")
             break
         else:
