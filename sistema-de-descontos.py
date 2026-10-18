@@ -6,6 +6,7 @@ def calcular_total(preco, quantidade, desconto):
     return total
 
 while True:
+    print("-------------------------------")
     quantidade = int(input("Digite a quantidade que vai vender: "))
     if quantidade == 0:
         print("ENCERRANDO...")
@@ -30,11 +31,11 @@ while True:
         else:
             valor_frete = frete
             
-        print("-----------------------")
+        print("-------------------------------")
         print(f"{c}o. Compra")
         print(f"Valor da compra: R${resultado}")
         print(f"Valor do frete: R${valor_frete}")
-        print("-----------------------")
+        print("-------------------------------")
         
         continuar = input("Quer continuar? {sim/não}: ").strip().lower() == "sim"
         if not continuar:
