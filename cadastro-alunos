@@ -1,10 +1,13 @@
 cadastros = []
+c = True
 
-for _ in range(2):
+while c == True:
     entrada = input("Digite seu nome e email separados por (;): ").split(";")
     nome = entrada[0].strip()
     email = entrada[1].strip().lower()
     cadastros.append({"nome": nome, "email": email})
+    continuar = input("Deseja fazer um novo cadastro? {sim/não}: ").strip().lower() == "sim"
+    c = continuar
 
 for cadastro in cadastros:
     print(f"{cadastro['nome']} | {cadastro['email']}")
