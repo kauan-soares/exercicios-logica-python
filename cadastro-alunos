@@ -1,0 +1,13 @@
+alunos = []
+
+aluno1 = {"nome" : "Kauan", "idade" : 18, "curso" : "Python"}
+aluno2 = {"nome" : "Gabriel", "idade" : 18, "curso": "Python"}
+
+alunos.append(aluno1)
+alunos.append(aluno2)
+
+for aluno in alunos:
+    print(f"{aluno["nome"]} - {aluno["idade"]} anos")
+
+print(f"Total de alunos: {len(alunos)}")
+  
