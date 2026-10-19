@@ -1,13 +1,12 @@
-alunos = []
+cadastros = []
 
-aluno1 = {"nome" : "Kauan", "idade" : 18, "curso" : "Python"}
-aluno2 = {"nome" : "Gabriel", "idade" : 18, "curso": "Python"}
+for _ in range(2):
+    entrada = input("Digite seu nome e email separados por (;): ").split(";")
+    nome = entrada[0].strip()
+    email = entrada[1].strip().lower()
+    cadastros.append({"nome": nome, "email": email})
 
-alunos.append(aluno1)
-alunos.append(aluno2)
+for cadastro in cadastros:
+    print(f"{cadastro['nome']} | {cadastro['email']}")
 
-for aluno in alunos:
-    print(f"{aluno["nome"]} - {aluno["idade"]} anos")
-
-print(f"Total de alunos: {len(alunos)}")
-  
+print(f"Total de cadastros: {len(cadastros)}")
